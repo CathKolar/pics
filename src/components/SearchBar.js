@@ -10,14 +10,15 @@ onFormSubmit = (event) => {
 
   render() {
     return (
-      <div className="ui segment">
+      <div className="ui raised segment">
         <form onSubmit={this.onFormSubmit} className="ui form">
           <div className="field">
             <label>Image Search</label>
             <input
               type="text"
+              placeholder='whatcha wanna see?'
               value={this.state.term}
-              onChange={(e)  => this.setState({  term: e.target.value  })}
+              onChange={(e) => this.setState({ term: e.target.value })}
             />
           </div>
         </form>
